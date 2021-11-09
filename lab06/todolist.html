@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/cde93eb6a0.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id=weather>
+        <div class="row">
+			<label for="bgInput">Choose a city: </label>
+			<select id="bgInput">
+				<option value="LosAngeles">Los Angeles</option>
+				<option value="Dallas">Dallas</option>
+				<option value="Denver">Denver</option>
+			</select>
+		</div>
+        <span id=weathertext>Weather!</span>
+        </div>
+
+    <div id=todolist>
+        <h3>To Do List<i id=plus class="fas fa-plus"></i></h3>
+        <div id=input area>
+            <input type="text" id="fname" name="fname" placeholder="Add to-do item here"><br><br>
+         </div>
+         
+
+        <div id=todolistitems>
+                <!-- <ul id=list>
+                    <li id=item1><span class="fas fa-camera"></span></span>blahblah</li>
+                    <li id=item2><span class="fas fa-camera"></span>x</li>
+                    <li id=item3><span class="fas fa-camera"></span>x</li>
+                </ul> -->
+                
+                <div id="itemdiv">
+                    <i class="fas fa-camera"></i>
+                    <span> text txt 1</span>
+                </div>
+
+                <div id="itemdiv">
+                    <i class="fas fa-camera"></i>
+                    <span> text txt 2</span>
+                </div>
+
+                <div id="itemdiv">
+                    <i class="fas fa-camera"></i>
+                    <span> text txt 3</span>
+                </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>

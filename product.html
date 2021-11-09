@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flattum Store</title>
+
+    <style>
+
+        *{
+        box-sizing: border-box
+        }
+
+        html, body {
+			margin: 0;
+			padding: 0;
+            background-color: lightblue;
+		}
+
+        @font-face {
+            font-family: Roboto;
+            src: url(/fonts/Roboto-Black.tff);
+        }
+
+        .clearfloat {
+            content: "";
+			clear: both;
+			display: table;
+        }
+
+        #header {
+            background-color: lightgreen;
+            font-size: 40px;
+            font-weight:bold;
+            padding-left: 20px;
+            text-align: center;
+        }
+
+        /* #reviews{
+        float: left;
+        } */
+
+        #promo{
+            background-color: yellow;
+            border-color: black;
+            border: 2px;
+            border-style: solid;
+            margin-left: auto;
+			margin-right: auto;
+            text-align: center;
+            width: 200px;
+        }
+
+        #relatedproducts img{
+            float:left;
+            width: 100%;
+            
+        }
+
+        #description{
+            padding-left: 10px;
+        }
+
+        #description img{
+            width: 50%;
+            margin: 25%;
+            
+            
+        }
+
+        #pro1, #pro2, #pro3, #pro4{
+            border: green;
+            border-style: solid;
+            border-width: 10%;
+            overflow: hidden;
+            width: 42%;
+            margin-left: 29%;
+            margin-bottom: 5%;
+            
+            
+        }
+
+        #relatedtext{
+            text-align: center;
+
+        }
+
+        #reviews{
+            width:50%
+        }
+
+        #relatedproducts img:hover{
+            opacity: .2;
+            transition:opacity 1s;
+          
+        }
+
+        #relatedproducts img:hover~ #nail{
+            opacity: 1;
+        }
+
+        #relatedproducts img:hover~ #ruler{
+            opacity: 1;
+        }
+
+        #relatedproducts img:hover~ #pliers{
+            opacity: 1;
+        }
+
+        #relatedproducts img:hover~ #level{
+            opacity: 1;
+        }
+
+        #nail, #ruler, #pliers, #level{
+            position:absolute;
+            /* float: left; */
+            margin:17%;
+            opacity: 0;
+        }
+
+        /* Tablet size starts at 768px */
+        @media (min-width: 768px) {
+            #header {
+            background-color: orangered;
+            }
+
+            #description img{
+            width: 40%;
+            margin: 10%;
+            float: left;
+            }
+
+            #pro1, #pro2, #pro3, #pro4{
+            border: green;
+            border-style: solid;
+            border-width: 10%;
+            /* overflow: hidden; */
+            width: 40%;
+            margin-left: 6%;
+            margin-bottom: 6%;
+            float: left;
+            }
+
+            #reviews{
+            width:40%;
+            float:left;
+            }
+
+            #promo{
+            background-color: yellow;
+            border-color: black;
+            border: 2px;
+            border-style: solid;
+            width: 200px;
+            }
+
+            #relatedproducts img{
+            float:left;
+            width: 100%;
+
+
+        }
+    }
+        /* Small desktop starts at 992px.*/
+        @media (min-width: 992px) {
+            #header {
+            background-color: yellow;
+            }
+
+            #description img{
+            width: 40%;
+            margin: 10%;
+            float: left;
+            }
+
+            #pro1, #pro2, #pro3, #pro4{
+            border: green;
+            border-style: solid;
+            border-width: 10%;
+            /* overflow: hidden; */
+            width: 18%;
+            margin-left: 5%;
+            margin-bottom: 5%;
+            float: left;
+            }
+
+            #reviews{
+            width:40%;
+            float:left;
+            }
+
+            #promo{
+            background-color: yellow;
+            border-color: black;
+            border: 2px;
+            border-style: solid;
+            width: 200px;
+            }
+
+            #relatedproducts img{
+            float:left;
+            width: 100%;
+            }
+
+            #nail, #ruler, #pliers, #level{
+            position:absolute;
+            /* float: left; */
+            margin:7%;
+            
+        }
+
+        
+    }
+        /* Large Desktop starts at 1200px */
+        @media (min-width: 1200px) {
+            #header {
+            background-color: green; /* This actually overrides background-color: yellow from previous media query */
+            }
+        }
+    
+    </style>
+
+    </head>
+<body>
+    <div id="header">
+        <h1>Flattum's Hammer Shop</h1>
+    </div>
+
+    <div id="description">
+        <div id="name">
+            <h2>Hammer</h2>
+        </div>
+
+        <div id=photo>
+            <img src="images/hammer.jpeg"/>
+        </div>
+
+        <div id="price">
+            <h2>$14.99</h2>
+        </div>
+
+        <div id="reviews">
+            <img src="images/reviews.png"/>
+        </div>
+
+        <div id="description">
+            <p>This is the hammer you need! It is sturdy, reliable, and visually attractive. It has all the function of a regular hammer, with the beauty of a premier hammer, all at the price of a corner store hammer. Order this hammer today!</p>
+        </div>
+
+        <div id="bullets">
+            <ul>
+                <li>High Durability - One-piece forged with high quality carbon steel, sturdy and easy to use. Heavy duty hammer( 2 pounds in total ).</li>
+                <li>16 Oz Bright Claw Head - Mirror polished design, stable strike and easy pulling out of nails.</li>
+                <liMulti-purpose - Suitable for different hammering events, like woodwork, household repair, and construction.></li>
+                <liGreat Sales Service - Lifetime warranty and 100% Satisfactory sales service from the seller.></li>
+                <li>GENUINE HICKORY HANDLE – Designed to fit the grip of the user’s hand ensuring comfort & control</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="clearfloat"></div>
+
+    <div id="promo">
+        <p>Use code CHRIS for 20% off!</p>
+    </div>
+
+    <div id="relatedproducts">
+        <div id="relatedtext">
+            <h2>Related Products</h2>
+        </div>
+        <div id="pro1">
+            <img src="images/nail.jpeg"/>
+            <div id=nail><h3>Nail</h3></div>
+        </div>
+
+        <div id="pro2">
+            <img src="images/ruler.jpeg"/>
+            <div id=ruler> <h3>Ruler</h3></div>
+        </div>
+
+        <div id="pro3">
+            <img src="images/pliers.jpeg"/>
+            <div id=pliers> <h3>Pliers</h3></div>
+        </div>
+
+        <div id="pro4">
+            <img src="images/level.jpeg"/>
+            <div id=level> <h3>Level</h3></div>
+        </div>
+    </div>
+    <div class="clearfloat"></div>
+    
+</body>
+</html>

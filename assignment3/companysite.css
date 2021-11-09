@@ -1,0 +1,131 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+
+#header{
+    background-image: url(https://303.itpwebdev.com/~cflattum/assignment3/images/missiles.jpg);
+    text-align: center;
+    text-shadow: 2px 2px black;
+    background-size: cover;
+    padding: 15%;
+    color: white;
+    margin-bottom: 4%;
+}
+
+#header2{
+    background-image: url(https://303.itpwebdev.com/~cflattum/assignment3/images/missile3.jpg);
+    text-align: center;
+    text-shadow: 2px 2px black;
+    background-size: cover;
+    padding: 15%;
+    padding-bottom: 33%;
+    color: white;
+    margin-bottom: 4%;
+}
+
+#header2 h1{
+    padding-bottom: 2%;
+}
+
+
+#feature1{
+    /* padding-top: 10%; */
+    /* padding-bottom: 10%; */
+    color: white;
+    text-align: center;
+    color: black;
+}
+
+#feature2{
+    /* margin-top: 5%;
+    padding-top: 20%;
+    padding-bottom: 20%; */
+    color: black;
+    text-align: center;
+    
+}
+
+#footer{
+    margin-top: 4%;
+    text-emphasis: none;
+}
+
+#team1{
+    text-align: center;
+}
+#team2{
+    text-align: center;
+}
+#team3{
+    text-align: center;
+}
+
+
+
+@media (max-width: 767px) { 
+
+    #feature1{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    #feature1img{
+        margin-bottom: 5%;
+    }
+
+    #feature2{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    #feature2img{
+        margin-bottom: 1%;
+    }
+
+}
+
+ @media (max-width: 991px) { 
+
+    #feature1{
+        margin-top: 11%;
+        margin-bottom: 5%;
+    }
+    #feature1img{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    #feature2{
+        margin-top: 14%;
+        margin-bottom: 5%;
+    }
+    #feature2img{
+        margin-top: 5%;
+        margin-bottom: 1%
+    }
+
+} 
+
+@media (min-width: 991px) {
+
+    #feature1{
+        margin-top: 18%;
+        margin-bottom: 5%;
+    }
+    #feature1img{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    #feature2{
+        margin-top: 18%;
+        margin-bottom: 5%;
+    }
+    #feature2img{
+        margin-top: 5%;
+        margin-bottom: 1%
+    }
+
+    /* #header{
+        margin-bottom: 4%;
+    } */
+}

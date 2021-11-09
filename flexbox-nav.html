@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+	box-sizing: border-box;
+    }
+
+        /* .container #naviation{
+            display: flex;
+            flex-direction: column;
+        }
+        .item #navigation a{
+            min-width: 300px;
+        } */
+    
+    .navigation{
+        background-color: skyblue;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+
+    .navigation a{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+        color: black;
+       
+        
+    }
+
+    .navigation :hover{
+        background-color: lightpink;
+    }
+
+/* mobile first approach wasnt working  */
+
+@media (min-width: 768px) {
+        .navigation {
+            display: flex;
+            flex-flow: row wrap;
+            flex-wrap: wrap;
+            
+        }
+        .navigation a{
+            width:50%;
+        }
+    }
+
+@media (min-width: 992px) {
+        .navigation {
+            flex-wrap:nowrap;
+            flex-direction: row;
+            justify-content: center;
+            
+            /* justify-content: space-around; */
+            
+        }
+        /* .navigation a{
+            width: 50%; */
+        }
+    
+
+    }
+
+
+
+
+    </style>
+
+</head>
+<body>
+
+<div class="navigation">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Team</a>
+    <a href="#">Contact</a>
+</div>
+    
+</body>
+</html>

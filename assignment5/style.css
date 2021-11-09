@@ -1,0 +1,81 @@
+#movierows{
+    text-align: center;
+}
+
+#movierows img{
+    width: 100%;
+}
+
+#document{
+    position: relative;
+}
+
+#overlay{
+    position: absolute;
+    top: 0;
+    width: auto;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    display: block;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+#overlay1{
+    position: absolute;
+    top: 20px;
+    width: auto;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: block;
+    padding-left: 12px;
+    padding-right: 12px;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+#overlay2{
+    position: absolute;
+    text-align: justify;
+    display: block;
+    top:50px;
+    padding-left: 10%;
+    padding-right: 15%;
+    /* user-select: none; */
+    font-size: 15px;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+#movierows img:hover{
+    opacity: .3;
+    transition:opacity .3s;
+  
+}
+
+#movierows img:hover ~ #overlay2{
+    visibility: visible;
+  
+}
+#movierows img:hover ~ #overlay1{
+    visibility: visible;
+  
+}
+#movierows img:hover ~ #overlay{
+    visibility: visible;
+  
+}
+
+/* #movierows :hover #{
+    opacity: .3;
+    transition:opacity 1s;
+  
+} */
+
+#divelementnamedate{
+    text-align: center;
+    color: blue;
+}

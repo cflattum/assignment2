@@ -1,0 +1,47 @@
+body{
+    background-color: skyblue !important;
+    font-family: 'Roboto', sans-serif;
+}
+
+#todolist{
+    width : 550px;
+    padding-left: auto;
+    padding-right: auto;
+    border:black 1px solid;
+    background-color: white;
+    
+}
+
+#todolist > h3{
+    background-color: lightblue;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#todolistitems > div{
+    border:black 1px solid;
+    box-shadow: 3px 3px 1px rgba(49, 49, 70, 0.2);
+    margin-bottom: 7px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+#weather{
+    border:black 1px solid;
+    width:550px;
+    padding-left: auto;
+    padding-right: auto;
+    background-color: lightcyan;
+}
+
+#fname {
+    margin-left: 30px;
+}
+
+#todolistitems > div:hover{
+    background-color: lightgrey;
+}
+
+#plus{
+    padding-left: 389px;
+}
